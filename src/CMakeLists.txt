@@ -1,2 +1,2 @@
-add_subdirectory(dga)
+add_subdirectory(dag)
 add_subdirectory(common)

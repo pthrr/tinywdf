@@ -1,0 +1,22 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  config_debug:
+    cmds:
+      - cmake --preset=debug
+
+  build_debug:
+    cmds:
+      - task: config_debug
+      - cmake --build --preset=debug
+
+  test_debug:
+    cmds:
+      - task: build_debug
+      - ctest --preset=debug
+
+  clean:
+    cmds:
+      - rm -rf build

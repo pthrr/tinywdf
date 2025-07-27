@@ -1,0 +1,3 @@
+[submodule "src/common"]
+	path = src/common
+	url = ssh://github.com/pthrr/common

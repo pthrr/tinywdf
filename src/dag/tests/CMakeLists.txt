@@ -6,9 +6,9 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(catch2)
 
-add_executable(test_dga test_nodearena.cpp)
-target_link_libraries(test_dga PRIVATE Catch2::Catch2WithMain dga)
+add_executable(test_dag test_nodearena.cpp)
+target_link_libraries(test_dag PRIVATE Catch2::Catch2WithMain dag)
 
 include(CTest)
 include(Catch)
-catch_discover_tests(test_dga)
+catch_discover_tests(test_dag)

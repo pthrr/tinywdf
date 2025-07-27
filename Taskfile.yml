@@ -3,6 +3,14 @@
 version: '3'
 
 tasks:
+  clean_debug:
+    cmds:
+      - rm -rf build/Debug
+
+  clean_release:
+    cmds:
+      - rm -rf build/Release
+
   config_debug:
     cmds:
       - cmake --preset=debug

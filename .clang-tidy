@@ -1,0 +1,2 @@
+InheritParentConfig: true
+CompilationDatabase: './build/Debug'
